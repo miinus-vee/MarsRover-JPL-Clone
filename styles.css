@@ -1,0 +1,109 @@
+* {
+    padding: 20;
+    margin: 20;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    color: grey;
+}
+
+* {
+    -webkit-user-select: none; 
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+/*  This is for styling the main container that holds everything */
+#container {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: #ffffff;
+}
+
+/* This styles the navbar and its contents */
+#navbar {
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    left: 0;
+}
+
+/* This styles the logo in the navbar */
+#navbar #logo {
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    left: 3%;
+    top: -5px;
+}
+
+/* This styles the logo image to be used in the navbar */
+#navbar #logo img {
+    height: 10rem;
+    width: 30rem;
+}
+
+/* This styles the unlisted links in the navbar */
+#navbar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 5%;
+    top: 0;
+}
+
+/* This changes the appearance of the listed links in the navbar */
+#navbar ul li {
+    height: 60px;
+    width: 80px;
+    margin: 0 30px;
+    display: grid;
+    place-items: center;
+    color: grey;
+}
+
+/* This sets the hover action of the navbar links */
+#navbar ul:hover .active {
+    background: none;
+    border: none;
+}
+
+/* This styles the descriptions of the 3D object */
+#content {
+    height: 500px;
+    width: 700px;
+    position: absolute;
+    left: 12%;
+    top: calc(50% - 250px);
+}
+
+/* This styles the heading in the 3D description */
+#content h2 {
+    font-size: 140px;
+    color: grey;
+}
+
+
+#content p {
+    font-size: 3.17rem;
+    color: rgb(227, 227, 227);
+}
+
+#aSide {
+    height: 600px;
+    width: 800px;
+    position: absolute;
+    top: calc(50% - 270px);
+    right: 7%;
+}
+
+#aSide model-viewer {
+    height: 600px;
+    width: 800px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+}
